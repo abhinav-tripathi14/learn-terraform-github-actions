@@ -37,7 +37,6 @@ jobs:
           configuration_version: ${{ steps.apply-upload.outputs.configuration_version_id }}
 
       - run: |
-        shell: ${{ github.event.inputs.logLevel }}"
         name: ${{ github.event.inputs.tags }}" 
 
       - name: Apply
