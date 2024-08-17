@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = var.AWS_Region
 }
 
 resource "random_pet" "sg" {}
