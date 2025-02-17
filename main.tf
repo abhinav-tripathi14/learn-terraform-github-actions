@@ -48,7 +48,6 @@ resource "aws_instance" "web" {
               systemctl restart apache2
               EOF
 }
-
 resource "aws_security_group" "web-sg" {
   name = "${random_pet.sg.id}-sg"
   ingress {
